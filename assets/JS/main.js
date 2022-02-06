@@ -56,14 +56,7 @@ function dishesdisplay(dishe) {
 document.getElementById("articles").innerHTML = `${recipes.map(dishesdisplay).join("")}`;
 // #endregion ============ affichage des plats
 
-
-
-
-
-
-
-
-
+// #region ============ SEARCH
 const searchinput = document.getElementById("main_search");
 
 searchinput.addEventListener('keyup', function(){
@@ -75,12 +68,12 @@ searchinput.addEventListener('keyup', function(){
     let suggestion = '';
     if(input != "") {
         result.forEach(resultItem => suggestion +=`
-            <li class="suggestion">${resultItem.name}</li>
+            ${dishesdisplay(resultItem)}
         `);
-        
+    } else {
+        dishesdisplay();
     }
     // Affichage de chaque resultat
-    document.getElementById('suggestions').innerHTML = suggestion;
-    
+    document.getElementById("articles").innerHTML = suggestion;
 });
-
+// #endregion ============ SEARCH
