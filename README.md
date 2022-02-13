@@ -42,7 +42,7 @@ Vous êtes freelance et vous venez d’être missionné par l’entreprise “Le
 <table>
 <tr>
 <td>
-<img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png)" align="center" alt="Ganatan Angular Example Demo" width="140" height="140">
+<img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" alt="logo">
 </td>
 </tr>
 </table>
