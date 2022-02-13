@@ -18,19 +18,19 @@
 
 
 > TAG
-- [o] function delet TAG
-- [o] display TAG with good color (dataset)
-- [o] display TAG by order of color
-- [o] remove the elements of each list when a tag is select
-- [o] add the elements of each list when a tag is delet
+- [ ] function delet TAG
+- [ ] display TAG with good color (dataset)
+- [ ] display TAG by order of color
+- [ ] remove the elements of each list when a tag is select
+- [ ] add the elements of each list when a tag is delet
 
 > ALGO
-- [o] Create two scripts for the main search
--   [o] with native function
--   [o] with a loop FOR
-- [o] Create documentation for this scripts
-- [o] JSbench (test)
-- [o] Create two branch for this script
+- [ ] Create two scripts for the main search
+-   [ ] with native function
+-   [ ] with a loop FOR
+- [ ] Create documentation for this scripts
+- [ ] JSbench (test)
+- [ ] Create two branch for this script
 
 
 
@@ -39,17 +39,14 @@
 
 Vous êtes freelance et vous venez d’être missionné par l’entreprise “Les petits plats” en temps que Développeur Front-end pour une mission de 3 mois.
 
-<div style="text-align:center">
-<table>
+
+<table style="text-align:center">
 <tr>
 <td>
 <img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png"  alt="logo">
 </td>
 </tr>
 </table>
-</div>
-
-
 
 
 Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de se lancer dans un nouveau projet : réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.  
