@@ -42,7 +42,7 @@ Vous êtes freelance et vous venez d’être missionné par l’entreprise “Le
 <table>
 <tr>
 <td>
-<img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" alt="logo">
+<img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" align="center" alt="logo">
 </td>
 </tr>
 </table>
