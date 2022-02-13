@@ -2,11 +2,53 @@
 
 [Ce projet est disponible sur mon site](http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html)
 
+
+## Table of contents
+
+- [ToDo List](#ToDo-list)
+- [Développez un algorithme de recherche en JavaScript](#Développez-un-algorithme)
+- [GOTO](#GOTO)
+- [How to](#How-to)
+
+
+### ToDo list
+> BTN
+- [x] Resize BTN
+- [x] Toogle one drop BTN
+
+
+> TAG
+- [o] function delet TAG
+- [o] display TAG with good color (dataset)
+- [o] display TAG by order of color
+- [o] remove the elements of each list when a tag is select
+- [o] add the elements of each list when a tag is delet
+
+> ALGO
+- [o] Create two scripts for the main search
+-   [o] with native function
+-   [o] with a loop FOR
+- [o] Create documentation for this scripts
+- [o] JSbench (test)
+- [o] Create two branch for this script
+
+
+
+
 ## Développez un algorithme de recherche en JavaScript
 
 Vous êtes freelance et vous venez d’être missionné par l’entreprise “Les petits plats” en temps que Développeur Front-end pour une mission de 3 mois.
 
+<table>
+<tr>
+<td>
 ![Logo de Les petits plats](https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png)
+</td>
+</tr>
+</table>
+
+
+
 
 Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de se lancer dans un nouveau projet : réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.  
 
@@ -66,3 +108,29 @@ En fin de matinée, vous recevez une notification Slack de Jean-Baptiste, votre 
 >Parfait, merci pour tes conseils JB. Je me lance !
 
 Ça y est, vous avez toutes les informations nécessaires pour démarrer votre travail. C’est parti !"# YannWattier_7_29092021" 
+
+## GOTO
+
+```bash
+
+# Go to see this project on my website
+https://github.com/yatzc/YannWattier_7_29092021.git
+
+# Go to see this project on my website
+http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
+
+
+```
+
+## How to
+
+### Github README.md
+* `git add README.md` (add the file)
+* `git commit -m "add readme"` (give a name to commit)
+* `git push` (push commit)
+
+### Github branch
+* `git branch name`  (add branch "name")
+* `git checkout name` (go to the branch "name")
+* `git branch -d name` (delete the branch "name")
+
