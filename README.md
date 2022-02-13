@@ -42,7 +42,7 @@ Vous êtes freelance et vous venez d’être missionné par l’entreprise “Le
 <table>
 <tr>
 <td>
-![Logo de Les petits plats](https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png)
+<img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png)" align="center" alt="Ganatan Angular Example Demo" width="140" height="140">
 </td>
 </tr>
 </table>
@@ -125,7 +125,7 @@ http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
 ## How to
 
 ### Github README.md
-* `git add README.md` (add the file)
+* `git add README.md` (add the file to commit)
 * `git commit -m "add readme"` (give a name to commit)
 * `git push` (push commit)
 
