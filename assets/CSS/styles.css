@@ -12,12 +12,25 @@
     padding: 0;
 }
 
+main {
+    position: relative;
+}
+
 body {
     background: #f1f1f1;
     min-height: 100vh;
     margin: 0;
     max-width: 1240px;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    /* opacity: 1; */
+}
+.visible {
+    display: flex;
 }
 /* #endregion master */
 
@@ -28,8 +41,6 @@ header {
     padding: 3em 0 2em 0;
 }
 /* #endregion logo */
-
-
 
 /* #region main-search */
 .container_main-search {
@@ -66,10 +77,8 @@ header {
 }
 /* #endregion main-search */
 
-
-
 /* #region Main search */
-.wrapper {
+/* .wrapper {
     max-width: 450px;
     margin: 150px;
   }
@@ -137,22 +146,19 @@ header {
   
   .autocom-box li:hover {
     background: #efefef;
-  }
+  } */
 /* #endregion Main search */
-
-
-
-
-
-
-
 
 /* #region BTN search */
 .container {
     display: flex;
+    
 }
 .drop {
-    margin: 20px 20px 20px 0;
+    position: relative;
+    /* top: 10px; */
+    margin: 15px 20px 20px 0;
+    z-index: 1000;
 }
 .btn {
     display: flex;
@@ -166,13 +172,16 @@ header {
     color: white;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 .btn-clicked {
+    display: flex;
+    justify-content: space-between;
     width: 667px;
 }
 
 button label {
-    display: inline-bloc;
+    /* display: inline-bloc; */
 }
 button input {
     width: 300px;
@@ -207,6 +216,8 @@ button input::placeholder {
 
 
 .bloc {
+    position: absolute;
+    top: 63px;
     visibility: hidden;
     opacity: 0;
     /* transition: .3s; */
@@ -251,9 +262,11 @@ button input::placeholder {
 }
 
 .bloc li {
+    display: list-item;
     list-style-type: none;
     padding: 5px 0;
     color: white;
+    cursor: pointer; 
 }
 .bloc li:last-child {
     padding-bottom: 25px;
@@ -266,9 +279,11 @@ button input::placeholder {
 
 /* #region dishes */
 .dishes {
+    position: absolute;
+    top: 230px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    gap: 3em;
 }
 .container-dishes {
     display: grid;
@@ -357,6 +372,40 @@ button input::placeholder {
 
 /* #endregion dishes */
 
-
 /* #region tags */
+.btn-tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    padding: 15px;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.btn-tag img {
+    margin-left: 15px;
+}
+
+.search-tags {
+    display: flex;
+    
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px 0 0 0;
+}
+
+.search-tags button {
+    margin-right: 20px;
+}
+
+.search-tags button label {
+    cursor: pointer;
+}
+
 /* #endregion tags */

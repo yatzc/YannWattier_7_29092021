@@ -133,3 +133,20 @@ http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
 * `git checkout name` (go to the branch "name")
 * `git branch -d name` (delete the branch "name")
 
+
+## What I learned
+* Do a readme on Github
+* Do a branch on Github
+* Do an algorigrammer on
+
+## New tool
+* JS Bench (speed test of two code in parallel)
+* Draw.io (schema online)
+* Nation (bank my learn & make a progress project, online)
+
+# Toggle
+
+<details>
+    <summary> Test toggle</summary>
+    Content of toggle
+</details>
