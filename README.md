@@ -6,9 +6,11 @@
 ## Table of contents
 
 - [ToDo List](#ToDo-list)
-- [Développez un algorithme de recherche en JavaScript](#Développez-un-algorithme)
+- [Développez un algorithme de recherche en JavaScript](#Développez-un-algorithme-de-recherche-en-JavaScript)
 - [GOTO](#GOTO)
 - [How to](#How-to)
+- [Test de performance](#Test-de-performance)
+- [Algorithme de filtre() ECMA 5](#Algorithme-de-filtre()-ECMA-5)
 
 
 ### ToDo list
@@ -18,18 +20,18 @@
 
 
 > TAG
-- [ ] function delet TAG
+- [x] function delet TAG
 - [ ] display TAG with good color (dataset)
 - [ ] display TAG by order of color
 - [ ] remove the elements of each list when a tag is select
 - [ ] add the elements of each list when a tag is delet
 
 > ALGO
-- [ ] Create two scripts for the main search
--   [ ] with native function
--   [ ] with a loop FOR
-- [ ] Create documentation for this scripts
-- [ ] JSbench (test)
+- [x] Create two scripts for the main search
+-   [x] with native function
+-   [x] with a loop FOR
+- [x] Create documentation for this scripts
+- [x] JSbench (test)
 - [ ] Create two branch for this script
 
 
@@ -144,9 +146,54 @@ http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
 * Draw.io (schema online)
 * Nation (bank my learn & make a progress project, online)
 
-# Toggle
+# Test de performance
 
 <details>
-    <summary> Test toggle</summary>
-    Content of toggle
+    <summary> Test de performance</summary>
+    Afin de bien comprendre les performances des fonctions native de JS, il a été demandé de faire un algorigramme sur le filtre principal de ce projet.
+    Il conciste a filtrer les cartes des menus au fur et à mesure de la saisie des ingrédiants, appareils, ustensiles et nom des recettes dans un input.
+    J'ai donc utilisé comme demandé le banc de test JSBEN.CH en ligne, mais après plusieurs tests, JSBEN.CH ne parvient pas à faire la différence entre mes deux codes, il me dit que le plus performant est un coup les fonction native et un coup la fonction avec les boucles.
+    J'ai donc utilisé JSBench.me, qui m'a bien montré que les fonction native on des algorithme bien plus performent qu'un simple filtre fait sans un algo bien réfléchi.
 </details>
+
+## Algorithme de filtre() ECMA 5
+
+```bash
+
+if (!Array.prototype.filter){
+  Array.prototype.filter = function(func, thisArg) {
+    'use strict';
+    if ( ! ((typeof func === 'Function' || typeof func === 'function') && this) )
+        throw new TypeError();
+
+    var len = this.length >>> 0,
+        res = new Array(len), // preallocate array
+        t = this, c = 0, i = -1;
+    if (thisArg === undefined){
+      while (++i !== len){
+        // checks to see if the key was set
+        if (i in this){
+          if (func(t[i], i, t)){
+            res[c++] = t[i];
+          }
+        }
+      }
+    }
+    else{
+      while (++i !== len){
+        // checks to see if the key was set
+        if (i in this){
+          if (func.call(thisArg, t[i], i, t)){
+            res[c++] = t[i];
+          }
+        }
+      }
+    }
+
+    res.length = c; // shrink down array to proper size
+    return res;
+  };
+}
+
+
+```
