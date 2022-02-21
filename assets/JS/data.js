@@ -15,10 +15,30 @@ export let recipesArray = recipes.forEach((elt, i) => {
 
 
 // ================ INGREDIENTS =============================
-// concat "
-let all_ingredients = _ingredients.flat();
+// concat
+// let all_ingredients = _ingredients.flat();
 // supprime les doublons du array
-export let unique_ingredients = [...new Set(all_ingredients)];
+// export let unique_ingredients = [...new Set(all_ingredients)];
+
+
+
+let all_ingredients = _ingredients.flat();
+
+let ingred = [];
+
+for (let i = 0; i < all_ingredients.length; i++) {
+    let all_ingredient = [];
+    all_ingredient = all_ingredients[i].ingredient;
+    ingred.push(all_ingredient);
+}
+
+let all_ingred = ingred.flat();
+let unique_ingred = [...new Set(all_ingred)];
+export let order_unique_ingredients = unique_ingred.sort();
+// console.log(order_unique_ingred)
+
+
+
 
 
 
