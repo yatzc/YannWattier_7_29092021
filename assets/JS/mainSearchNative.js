@@ -6,7 +6,7 @@ export function mainFilterNative(recipes) {
     searchinput.addEventListener('keyup', function(){
         // recupère la valeur du input
         const inputValue = searchinput.value;
-        // compare le input à personnes
+        // compare le input aux éléments
         let result = recipes.filter(item => 
             item.ingredients.find((ingredientArray) => ingredientArray.ingredient.toLowerCase().includes(inputValue.toLowerCase()) ) ||
             item.appliance.toLowerCase().includes(inputValue.toLowerCase()) ||

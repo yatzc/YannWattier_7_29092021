@@ -1,3 +1,7 @@
+// DOM btn img
+const btnImgB = document.querySelector('.btn-blue img');
+const btnImgG = document.querySelector('.btn-green img');
+const btnImgR = document.querySelector('.btn-red img');
 // DOM btn
 const btnB = document.querySelector('.btn-blue');
 const btnG = document.querySelector('.btn-green');
@@ -16,7 +20,7 @@ const inputG = document.querySelector('.appliances');
 const inputR = document.querySelector('.ustensils');
 
 
-btnB.addEventListener('click', () => {
+btnImgB.addEventListener('click', () => {
     blocB.classList.toggle('bloc-clicked');
     btnB.classList.toggle('btn-clicked');
     labelB.classList.toggle('hidden');
@@ -36,7 +40,7 @@ btnB.addEventListener('click', () => {
     inputR.classList.remove('ingredients-clicked');
 });
 
-btnG.addEventListener('click', () => {
+btnImgG.addEventListener('click', () => {
     blocG.classList.toggle('bloc-clicked');
     btnG.classList.toggle('btn-clicked');
     labelG.classList.toggle('hidden');
@@ -56,7 +60,7 @@ btnG.addEventListener('click', () => {
     inputR.classList.remove('ingredients-clicked');
 });
 
-btnR.addEventListener('click', () => {
+btnImgR.addEventListener('click', () => {
     blocR.classList.toggle('bloc-clicked');
     btnR.classList.toggle('btn-clicked');
     labelR.classList.toggle('hidden');
@@ -76,6 +80,14 @@ btnR.addEventListener('click', () => {
     inputB.classList.remove('ingredients-clicked');
   
 });
+
+
+
+
+
+
+
+
 
 //************************************************
 // export function btn(btnR, btnG, btnB, blocR, blocG, blocB, labelR, labelG, labelB, inputR, inputG, inputB) {

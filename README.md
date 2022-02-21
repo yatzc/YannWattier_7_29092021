@@ -10,7 +10,7 @@
 - [GOTO](#GOTO)
 - [How to](#How-to)
 - [Test de performance](#Test-de-performance)
-- [Algorithme de filtre() ECMA 5](#Algorithme-de-filtre()-ECMA-5)
+- [Algorithme de filtre ECMA 5](#Algorithme-de-filtre-ECMA-5)
 
 
 ### ToDo list
