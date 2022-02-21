@@ -131,6 +131,7 @@ http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
 * `git push` (push commit)
 
 ### Github branch
+* `git branch`  (list the branch)
 * `git branch name`  (add branch "name")
 * `git checkout name` (go to the branch "name")
 * `git branch -d name` (delete the branch "name")
@@ -139,7 +140,7 @@ http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
 ## What I learned
 * Do a readme on Github
 * Do a branch on Github
-* Do an algorigrammer on
+* Do an algorigrammer on draw.io
 
 ## New tool
 * JS Bench (speed test of two code in parallel)

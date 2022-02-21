@@ -27,8 +27,8 @@ function ustensilsTemplate(item) { return `<li data-css-color="red">${item}</li>
 // #endregion ============ affichage contenu des trois boutons
 
 
-mainFilterNative(recipes);
-// mainFilterLoop(recipes);
+// mainFilterNative(recipes);
+mainFilterLoop(recipes);
 
 // btnFilterB(recipes);
 // btnFilterG(recipes);
