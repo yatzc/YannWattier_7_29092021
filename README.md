@@ -32,7 +32,7 @@
 -   [x] with a loop FOR
 - [x] Create documentation for this scripts
 - [x] JSbench (test)
-- [ ] Create two branch for this script
+- [x] Create two branch for this script
 
 
 
