@@ -31,7 +31,7 @@ export const recipes = [
         "time": 10,
         "description": "Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu'à avoir la consistence désirée",
         "appliance": "Blender",
-        "ustensils": ["cuillère à Soupe", "verres", "presse citron" ],
+        "ustensils": ["cuillère à soupe", "verres", "presse citron" ],
         "image": 1
     },
     {
@@ -99,11 +99,11 @@ export const recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olives"
             }
         ],
         "time": 80,
-        "description": "Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'huile d'olive. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de tomate, le lait de coco ainsi que le poivron et l'oignon découpés en morceaux. Laisser cuisiner 30 minutes de plus. Servir avec du riz",
+        "description": "Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'huile d'olives. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de tomate, le lait de coco ainsi que le poivron et l'oignon découpés en morceaux. Laisser cuisiner 30 minutes de plus. Servir avec du riz",
         "appliance": "Cocotte",
         "ustensils": ["couteau"],
         "image": 3
@@ -322,7 +322,7 @@ export const recipes = [
                 "ingredient": "Vinaigre Balsamic"
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olives"
             }, 
             {
                 "ingredient": "Basilic"    
@@ -465,13 +465,13 @@ export const recipes = [
                 "unit":"cuillère à soupe"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "huile d'olives",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
         ],
         "time":40,
-        "description":"Cuire les pommes de terre environ 30 minutes. Découper les échalottes finement. Durant la cuisson des pommes de terre. Préparez la vinaigrette avec l'huile d'olive et le vinaigre de cidre. Salez poivrez à discrétion. Dans un saladier, mettre le mâche. Ajouter",
+        "description":"Cuire les pommes de terre environ 30 minutes. Découper les échalottes finement. Durant la cuisson des pommes de terre. Préparez la vinaigrette avec l'huile d'olives et le vinaigre de cidre. Salez poivrez à discrétion. Dans un saladier, mettre le mâche. Ajouter",
         "appliance": "Casserole",
         "ustensils":["couteau","saladier","cuillère en bois"],
         "image": 1
@@ -552,7 +552,7 @@ export const recipes = [
             }
         ],
         "time": 60,
-        "description":"Mélangez dans un saladier, la farine, les oeufs, et le lait. Battez jusqu'à avoir une masse homogène. Pendant ce temps faites fondre le beurre et ajoutez en une partie à la pâte à crêpes. Faire fondre le chocolat ( avec le reste du beurre salé ). Lorsque vous chauffez les crêpes. Ajouter le chocolat fondu et les bananes coupées en rondelles. Ajoutez une touche de chantilly pour les gourmands",
+        "description":"Mélangez dans un saladier, la farine, les oeufs, et le lait. Battez jusqu'à avoir une masse homogène. Pendant ce temps faites fondre le beurre et ajoutez en une partie à la pâte à crêpes. Faire fondre le chocolat ( avec le reste du beurre salé ). Lorsque vous chauffez les crêpes. Ajouter le chocolat fondu et les banane coupées en rondelles. Ajoutez une touche de chantilly pour les gourmands",
         "appliance": "Poële à crêpe",
         "ustensils":["saladier", "louche", "cuillère en bois"],
         "image": 1
@@ -713,7 +713,7 @@ export const recipes = [
                 "unit":"grammes"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "huile d'olives",
                 "quantity": 1,
                 "unit": "cuillères à soupe"
             }
@@ -1041,7 +1041,7 @@ export const recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olives"
             },
             {
                 "ingredient": "Paprika"
@@ -1153,7 +1153,7 @@ export const recipes = [
         "time": 20,
         "description":"Beurrer les tranches de pain, ajouter entre 2 tranches de pain de mie 1 tranche d'émental, une de blanc de dinde, et une autre d'emmental. Dans un récipient, mélanger le gruyère rappé avec le lait et la noix de muscade. Mettre sur les croque monsieux. Placer au four durnat 10 minutes.",
         "appliance": "Four",
-        "ustensils":["râpe à fromage", "cuillère à Soupe", "couteau"],
+        "ustensils":["râpe à fromage", "cuillère à soupe", "couteau"],
         "image": 1
     },
     {
@@ -1208,7 +1208,7 @@ export const recipes = [
                 "unit": "cl"
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olives"
             },
             {
                 "ingredient": "Orange",
@@ -1216,7 +1216,7 @@ export const recipes = [
             }
         ],
         "time": 25,
-        "description":"Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
+        "description":"Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olives à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
         "appliance": "Mixer",
         "ustensils":["couteau", "économe", "cuillère en bois"],
         "image": 1
@@ -1337,7 +1337,7 @@ export const recipes = [
             
         ],
         "time": 60,
-        "description":"Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'huile d'olive. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage rapé",
+        "description":"Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'huile d'olives. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage rapé",
         "appliance": "Four",
         "ustensils":["couteau", "cuillère en bois", "Poelle à frire"],
         "image": 1
@@ -1370,7 +1370,7 @@ export const recipes = [
         "time": 20,
         "description":"Fouettez les oeufs, le sucre et le lait. tremper les tranches de pain. Le cuire au four pendant environ 10 minutes à 180°. Servir",
         "appliance": "Four",
-        "ustensils":["fouet", "bol","Cuillère à Soupe"],
+        "ustensils":["fouet", "bol","Cuillère à soupe"],
         "image": 1
     },
     {
@@ -1708,11 +1708,11 @@ export const recipes = [
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Bananes",
+                "ingredient": "Banane",
                 "quantity": 2
             },
             {
-                "ingredient": "Kiwis",
+                "ingredient": "Kiwi",
                 "quantity": 3
             },
             {

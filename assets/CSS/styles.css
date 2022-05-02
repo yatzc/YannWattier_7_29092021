@@ -27,26 +27,22 @@ body {
 .hidden {
     display: none;
     visibility: hidden;
-    /* opacity: 1; */
 }
 .visible {
     display: flex;
 }
-/* #endregion master */
 
-/* #region logo */
 header {
     display: flex;
     justify-content: center;
     padding: 3em 0 2em 0;
 }
-/* #endregion logo */
+/* #endregion master */
 
 /* #region main-search */
 .container_main-search {
     display: flex;
     position: relative;
-    
 }
 
 .container_main-search :focus {
@@ -66,88 +62,12 @@ header {
     position: absolute;
     top: 50%;
     right: 20px;
-    width: 32,06px;
-    height: 32,06px;
+    width: 32px;
+    height: 32px;
     z-index: 20;
     transform: translateY(-50%);
 }
-
-.label_main-search label {
-    /* transform: translate(-50%, -50%); */
-}
 /* #endregion main-search */
-
-/* #region Main search */
-/* .wrapper {
-    max-width: 450px;
-    margin: 150px;
-  }
-  
-  .wrapper .search-input {
-    position: relative;
-    background: #fff;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); 
-  }
-  
-  .search-input input {
-    height: 55px;
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 0 60px 0 20px;
-    font-size: 18px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  }
-  
-  .search-input .icon {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: crimson;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #644bff;
-    cursor: pointer;
-  }
-  
-  .search-input .autocom-box {
-    padding: 0px;
-    max-height: 280px;
-    overflow-y: auto;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .search-input.active .autocom-box {
-    padding: 10px 8px;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  .search-input.active .autocom-box li {
-    display: block;
-  }
-  
-  .autocom-box li {
-    list-style: none;
-    padding: 8px 12px ;
-    width: 100%;
-    cursor: default;
-    border-radius: 3px;
-    display: none;
-  }
-  
-  .autocom-box li:hover {
-    background: #efefef;
-  } */
-/* #endregion Main search */
 
 /* #region BTN search */
 .container {
@@ -156,7 +76,6 @@ header {
 }
 .drop {
     position: relative;
-    /* top: 10px; */
     margin: 15px 20px 20px 0;
     z-index: 1000;
 }
@@ -180,18 +99,14 @@ header {
     justify-content: space-between;
     width: 667px;
 }
-
-button label {
-    /* display: inline-bloc; */
-}
-button input {
+.btn input {
     width: 300px;
     color: white;
     background: transparent;
     border: none;
     outline: none;
 }
-button input::placeholder {
+.btn input::placeholder {
     color: white;
     opacity: .8;
     font-size: 18px;
@@ -202,8 +117,6 @@ button input::placeholder {
 .btn-green { background: #68D9A4; }
 .btn-red   { background: #ED6454; }
 
-
-/* input id on btn */
 .ingredients,
 .appliances,
 .ustensils {
@@ -214,26 +127,19 @@ button input::placeholder {
 .ustensils-clicked {
     display: flex;
 }
-
-
 .bloc {
     position: absolute;
     top: 63px;
     visibility: hidden;
     opacity: 0;
-    /* transition: .3s; */
     width: 60px;
     height: 60px;
     padding: 0 20px;
-    /* transform: translateY(-20px); */
 }
 .blocB { background: #3282F7; }
 .blocG { background: #68D9A4; }
 .blocR { background: #ED6454; }
-
 .bloc-clicked {
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
     visibility: visible;
     opacity: 1;
     width: 667px;
@@ -242,7 +148,6 @@ button input::placeholder {
     overflow-y: scroll;
     scrollbar-width: thin;
     border-radius: 5px;
-    /* transform: translateY(0px); */
 }
 .bloc-clicked::-webkit-scrollbar {
     width: 0;
@@ -261,7 +166,6 @@ button input::placeholder {
     background: #ea4b38;
     border-radius: 5px;
 }
-
 .bloc li {
     display: list-item;
     list-style-type: none;
@@ -272,17 +176,13 @@ button input::placeholder {
 .bloc li:last-child {
     padding-bottom: 25px;
 }
-
-.list {
-    /* grid-template-columns: repeat(3, 1fr); */
-}
 /* #endregion BTN search */
 
 /* #region dishes */
 .dishes {
     position: absolute;
     top: 230px;
-    display: grid;
+    display: grid;                                 /* toogle ou ternère display:flex; */
     grid-template-columns: repeat(3, 1fr);
     gap: 3em;
 }
@@ -301,8 +201,6 @@ button input::placeholder {
     ;
 }
 .container-dishes-img {
-    /* width: 100%; */
-    /* height: 178px; */
     border-radius: 5px 5px 0 0;
     background: #C7BEBE;
     grid-area: image;
@@ -345,8 +243,6 @@ button input::placeholder {
 .dishes-ingredients {
     display: flex;
     justify-content: left;
-    /* align-items: center; */
-
     font-family: Lato, sans-serif;
     font-weight: 700;
     font-size: 12px;
@@ -361,15 +257,31 @@ button input::placeholder {
     font-weight: 400;
     font-size: 12px;
     grid-area: recipe;
-    /* overflow: hidden; */
     width: 200px;
 }
-.dishes-recipe p {
-    overflow: hidden;
+.dishes-recipe {
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 
+.dishes-recipe p {
+    overflow-y: scroll;
+}
 
+.dishes-recipe p::-webkit-scrollbar {
+    display: none;
+}
+
+.errorMessage {
+    font-family: "DM Sans";
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d04f4f;
+    display: block;
+}
+.errorMessage p {
+    display: flex;
+}
 
 /* #endregion dishes */
 
@@ -386,21 +298,16 @@ button input::placeholder {
     color: white;
     font-size: 16px;
     font-weight: 700;
-    
 }
 .btn-tag img {
     margin-left: 15px;
 }
-
 .search-tags {
     display: flex;
-    
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     max-width: 100%;
     padding: 20px 0 0 0;
 }
-
 .search-tags button {
     margin-right: 20px;
 }
@@ -408,5 +315,4 @@ button input::placeholder {
 .search-tags button label {
     cursor: pointer;
 }
-
 /* #endregion tags */

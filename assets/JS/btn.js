@@ -81,38 +81,3 @@ btnImgR.addEventListener('click', () => {
   
 });
 
-
-
-
-
-
-
-
-
-//************************************************
-// export function btn(btnR, btnG, btnB, blocR, blocG, blocB, labelR, labelG, labelB, inputR, inputG, inputB) {
-//     btnR.addEventListener('click', () => {
-//         blocR.classList.toggle('bloc-clicked');
-//         btnR.classList.toggle('btn-clicked');
-//         labelR.classList.toggle('hidden');
-//         inputR.classList.toggle('ingredients-clicked');
-    
-//         blocR.style.display = "block";
-//         blocB.style.display = "none";
-//         blocG.style.display = "none";
-    
-//         blocG.classList.remove('bloc-clicked');
-//         blocB.classList.remove('bloc-clicked');
-//         btnG.classList.remove('btn-clicked');
-//         btnB.classList.remove('btn-clicked');
-//         labelG.classList.remove('hidden');
-//         labelB.classList.remove('hidden');
-//         inputG.classList.remove('ingredients-clicked');
-//         inputB.classList.remove('ingredients-clicked');
-      
-//     });
-// }
-
-// btn(btnR, btnG, btnB, blocR, blocG, blocB, labelR, labelG, labelB, inputR, inputG, inputB);
-// btn(btnR, btnG, btnB, blocR, blocG, blocB, labelR, labelG, labelB, inputR, inputG, inputB);
-// btn(btnR, btnG, btnB, blocR, blocG, blocB, labelR, labelG, labelB, inputR, inputG, inputB);

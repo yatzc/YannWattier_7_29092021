@@ -12,10 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" />
     <!-- My CSS -->
     <link href="./assets/CSS/styles.css" rel="stylesheet" type="text/css" media="all">
-    <!-- My JS -->
-    <script type="module" src="./assets/JS/main.js" defer></script>
-    <script type="module" src="./assets/JS/recipes.js" defer></script>
-
+    
     <title>Les petits plats</title>
 </head>
 <body>
@@ -25,61 +22,62 @@
   </header>
 
   <!-- Main -->
-  <main>
+    <main>
 
+        <!-- Main search -->
+        <section class="section_main-search">
+            <div class="container_main-search">
+                <input id="main_search" class="input_main-search" type="text" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette" />
+                <label for="main_search" class="label_main-search">
+                    <img src="./assets/images/loupe.svg" alt="loupe chercher" />
+                </label>
+            </div>
+        <ul id="suggestions"></ul>
+        </section>
 
-    <!-- Main search -->
-    <section class="section_main-search">
-        <div class="container_main-search">
-            <input id="main_search" class="input_main-search" type="text" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette" />
-            <label for="main_search" class="label_main-search">
-                <img src="./assets/images/loupe.svg" alt="loupe chercher" />
-            </label>
-        </div>
-      <ul id="suggestions"></ul>
-    </section>
+        <!-- Tag search -->
+        <div class="search-tags"></div>
 
-    <!-- Tag search -->
-    <div class="search-tags"></div>
-
-    <!-- BTN search -->
-    <div class="container">
-        <div class="drop blue">
-            <button class="btn btn-blue">
-                <label for="ingredients">Ingredients</label>
-                <input class="ingredients" id="ingredients" type="text" placeholder="Rechercher un ingredient" />
-                <img src="./assets/images/arrow.svg" class="arrow" alt="bouton flèche" />
-            </button>
-            <div class="bloc blocB">
-                <ul id="list_blue" class="list"></ul>
+        <!-- BTN search -->
+        <div class="container">
+            <div class="drop blue">
+                <div class="btn btn-blue">
+                    <label for="ingredients">Ingredients</label>
+                    <input class="ingredients" id="ingredients" type="text" placeholder="Rechercher un ingredient" autocomplete="off"/>
+                    <img src="./assets/images/arrow.svg" class="arrow" alt="bouton flèche" />
+                </div>
+                <div class="bloc blocB">
+                    <ul id="list_blue" class="list"></ul>
+                </div>
+            </div>
+            <div class="drop green">
+                <div class="btn btn-green">
+                    <label for="appliances">Appareil</label>
+                    <input class="appliances" id="appliances" type="text" placeholder="Rechercher un appareil" autocomplete="off"/>
+                    <img src="./assets/images/arrow.svg" class="arrow" alt="bouton flèche" />
+                </div>
+                <div class="bloc blocG">
+                    <ul id="list_green" class="list"></ul>
+                </div>
+            </div>
+            <div class="drop red">
+                <div class="btn btn-red">
+                    <label for="ustensils">Ustensiles</label>
+                    <input class="ustensils" id="ustensils" type="text" placeholder="Rechercher un ustensile" autocomplete="off"/>
+                    <img src="./assets/images/arrow.svg" class="arrow" alt="bouton flèche" />
+                </div>
+                <div class="bloc blocR">
+                    <ul id="list_red" class="list"></ul>
+                </div>
             </div>
         </div>
-        <div class="drop green">
-            <button class="btn btn-green">
-                <label for="appliances">Appareil</label>
-                <input class="appliances" id="appliances" type="text" placeholder="Rechercher un appareil" />
-                <img src="./assets/images/arrow.svg" class="arrow" alt="bouton flèche" />
-            </button>
-            <div class="bloc blocG">
-                <ul id="list_green" class="list"></ul>
-            </div>
-        </div>
-        <div class="drop red">
-            <button class="btn btn-red">
-                <label for="ustensils">Ustensiles</label>
-                <input class="ustensils" id="ustensils" type="text" placeholder="Rechercher un ustensile" />
-                <img src="./assets/images/arrow.svg" class="arrow" alt="bouton flèche" />
-            </button>
-            <div class="bloc blocR">
-                <ul id="list_red" class="list"></ul>
-            </div>
-        </div>
-    </div>
 
-    <section class="dishes" id="articles"></section>
+        <section class="dishes" id="articles"></section>
 
-  </main>
-  
-  
+    </main>
+    <script type="module" src="./assets/JS/main.js"></script>
+    <script type="module" src="./assets/JS/recipes.js"></script>
 </body>
+
+
 </html>

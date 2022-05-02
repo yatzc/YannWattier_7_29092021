@@ -1,5 +1,7 @@
 import { recipes } from "./recipes.js";
 
+const recettes = document.getElementById("articles");
+
 // display des ingrédients
 export function ingredientsDisplay(ingredients) {
     return `
@@ -31,4 +33,4 @@ export function dishesdisplay(dishe) {
     `;
 }
 
-document.getElementById("articles").innerHTML = `${recipes.map(dishesdisplay).join("")}`;
+recettes.innerHTML = `${recipes.map(dishesdisplay).join("")}`;

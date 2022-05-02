@@ -1,6 +1,7 @@
 import { dishesdisplay } from "./dishe.js";
 
 const searchinput = document.getElementById("main_search");
+const recettes = document.getElementById("articles");
 
 export function mainFilterNative(recipes) {
     searchinput.addEventListener('keyup', function(){
@@ -15,12 +16,24 @@ export function mainFilterNative(recipes) {
         );
         // Met chaque resultat dans un div
         let suggestion = '';
-        if(inputValue != "") {
+        if(inputValue != "" && inputValue.length >= 3) {
+            recettes.style.display = "grid";
             result.forEach(resultItem => suggestion +=`${dishesdisplay(resultItem)}`);
-        } else {
+        } else{
+            recettes.style.display = "grid";
             suggestion = `${recipes.map(dishesdisplay).join("")}`;
         }
-        // Affichage de chaque resultat
-        document.getElementById("articles").innerHTML = suggestion;
+        if(result.length == 0){
+            // affiche message erreur
+            recettes.style.display = "block";
+            suggestion = 
+            `
+            <p class="errorMessage">
+                Aucune recette ne correspond à votre critère… vous pouvez chercher « tarte aux pommes », « poisson », etc...
+            </p>
+            `;
+        }
+        // Affichage de chaque resulta
+        recettes.innerHTML = suggestion;
     });
 }

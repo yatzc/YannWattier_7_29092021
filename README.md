@@ -1,55 +1,55 @@
 # [OC] PROJET 7
-
-[Ce projet est disponible sur mon site](http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html)
-
-
-## Table of contents
-
-- [ToDo List](#ToDo-list)
-- [Développez un algorithme de recherche en JavaScript](#Développez-un-algorithme-de-recherche-en-JavaScript)
-- [GOTO](#GOTO)
-- [How to](#How-to)
-- [Test de performance](#Test-de-performance)
-- [Algorithme de filtre ECMA 5](#Algorithme-de-filtre-ECMA-5)
-
-
-### ToDo list
-> BTN
-- [x] Resize BTN
-- [x] Toogle one drop BTN
-
-
-> TAG
-- [x] function delet TAG
-- [ ] display TAG with good color (dataset)
-- [ ] display TAG by order of color
-- [ ] remove the elements of each list when a tag is select
-- [ ] add the elements of each list when a tag is delet
-
-> ALGO
-- [x] Create two scripts for the main search
--   [x] with native function
--   [x] with a loop FOR
-- [x] Create documentation for this scripts
-- [x] JSbench (test)
-- [x] Create two branch for this script
-
-
-
-
 ## Développez un algorithme de recherche en JavaScript
 
-Vous êtes freelance et vous venez d’être missionné par l’entreprise “Les petits plats” en temps que Développeur Front-end pour une mission de 3 mois.
 
-
-<table style="text-align:center">
+<table>
 <tr>
 <td>
-<img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png"  alt="logo">
+
+**Présentation du projet :**
+Il est fait en une seule page et il permet de filtrer des recettes de cuisine en utilisant des **algorithmes de recherche en JavaScript**.
+
+Il y a deux recherches qui permettent de retrouver des recettes dans une base de donnée :
+* Une principal via une saisie sur un input.
+* Une secondaire via trois boutons dépliants, contenent chaqu'un une liste
+    * Ingrédients
+    * Appareil
+    * ustensiles
+Quant on cliquer sur un élément des listes, on ouvre des boutons TAG, afin de filtrer les repas.
+
+**Les languages utilisés :**
+* HTML 
+* CSS 
+* JavaScript
+
+**Contenu de ce README :**
+* Un index
+* Une mise en situation du projet
+* Les deux algorithmes
+* Les liens de ce projet.
 </td>
 </tr>
 </table>
 
+[Le site web de ce projet est disponible ici](http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html)
+
+## Table de contenu
+
+- [Mise en situation](#Mise-en-situation)
+- [Fiche d’investigation de fonctionnalité](#Fiche-d’investigation-de-fonctionnalité)
+- [GOTO](#GOTO)
+
+
+
+### Mise en situation
+
+Vous êtes freelance et vous venez d’être missionné par l’entreprise “Les petits plats” en temps que Développeur Front-end pour une mission de 3 mois.
+
+<p align="center">
+    <a href="http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html">
+        <img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png"  alt="logo">
+    </a>
+</p>
 
 Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de se lancer dans un nouveau projet : réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.  
 
@@ -108,93 +108,89 @@ En fin de matinée, vous recevez une notification Slack de Jean-Baptiste, votre 
 >**Vous**
 >Parfait, merci pour tes conseils JB. Je me lance !
 
-Ça y est, vous avez toutes les informations nécessaires pour démarrer votre travail. C’est parti !"# YannWattier_7_29092021" 
+Ça y est, vous avez toutes les informations nécessaires pour démarrer votre travail. C’est parti !"
 
-## GOTO
+
+
+### Fiche d’investigation de fonctionnalité :
+<table>
+<tr>
+<td>
+
+**Fonctionnalité : Recherche principale.** 
+
+**Problématique :**
+Afin d’offrir aux utilisateurs une recherche la plus rapide possible, nous allons en ecrire deux versions. Dans un second temps, nous allons utiliser une application web Jsben.ch, qui va éprouver ces deux versions l’une envers l’autre et sélectionner la plus rapide.
+
+**Option 1 :** Utiliser la fonction native filter()  
+**Avantage:**
+Il y a une lecture simple du code.
+**Inconvénient:**
+Cet version par ça fonction native est censé être la plus rapide, or ce n’est pas le cas.  
+Les concepteurs du langage Javascript cherche à ce que leurs fonctions natives soient les 
+plus performante possible.
+
+**Option 2 :** Utiliser une boucle for()  
+**Avantage:**
+D'un premier regard, je pense que mettre les comparaisons dans un if(), doit faire gagner du temps. 
+N’ayant pas encore toute la compréhension de ce phénomène, j’écoute le résultat de Jsben.ch pour choisir cet algorithme, qui est plus rapide.
+**Inconvénient:**
+Lisibilité du code un peu moin claire.
+
+**Solution retenue :**
+Sur 50 recettes, la différence entre les deux options ne se voit pas en termes d’ergonomie pour l’utilisateur.
+Par contre, pour savoir ce qu’il va se passer lorsque cette base de données va évoluer, il est bon de savoir qu’elle fonction est la plus rapide, grâce à des outils de comparaison.
+
+Les concepteurs du langage Javascript cherche à ce que leurs fonctions natives soient les plus performante possible, mais leur utilization peut être plus ou moin bien utilisé.
+
+C’est pour cela que des outils de comparaison de code tel que **jsben** exsistent.
+
+Ci-joint le lien du benchmark : https://jsben.ch/LBZTo 
+ 
+
+**Annexe :** 
+Algorigramme des deux options de filtre de la recherche principal.
+
+<p align="center">
+    <a href="http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html">
+        <img src="http://yann.wattier.free.fr/openclassrooms/PROJET7/Algorigramme_option1.PNG"  alt="algorigramme">
+    </a>
+</p>
+
+<p align="center">
+    <a href="http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html">
+        <img src="http://yann.wattier.free.fr/openclassrooms/PROJET7/Algorigramme_option2.PNG"  alt="algorigramme">
+    </a>
+</p>
+
+</td>
+</tr>
+</table>
+
+
+
+### GOTO
 
 ```bash
 
-# Go to see this project on my website
+# Go to see this project on GIHUB
 https://github.com/yatzc/YannWattier_7_29092021.git
 
 # Go to see this project on my website
 http://yann.wattier.free.fr/openclassrooms/PROJET7/index.html
 
+# Go to see the maquette
+https://www.figma.com/file/xqeE1ZKlHUWi2Efo8r73NK/UI-Design-Les-Petits-Plats-FR?node-id=0%3A1
 
-```
+# Go to see the test of the JSben.ch
+https://jsben.ch/LBZTo
 
-## How to
+# Go to see the "Fiche d’investigation de fonctionnalité"
+http://yann.wattier.free.fr/openclassrooms/PROJET7/Fiche-d’investigation-fonctionnalite-Les-petits-plats.pdf
 
-### Github README.md
-* `git add README.md` (add the file to commit)
-* `git commit -m "add readme"` (give a name to commit)
-* `git push` (push commit)
-
-### Github branch
-* `git branch`  (list the branch)
-* `git branch name`  (add branch "name")
-* `git checkout name` (go to the branch "name")
-* `git branch -d name` (delete the branch "name")
-
-
-## What I learned
-* Do a readme on Github
-* Do a branch on Github
-* Do an algorigrammer on draw.io
-
-## New tool
-* JS Bench (speed test of two code in parallel)
-* Draw.io (schema online)
-* Nation (bank my learn & make a progress project, online)
-
-# Test de performance
-
-<details>
-    <summary> Test de performance</summary>
-    Afin de bien comprendre les performances des fonctions native de JS, il a été demandé de faire un algorigramme sur le filtre principal de ce projet.
-    Il conciste a filtrer les cartes des menus au fur et à mesure de la saisie des ingrédiants, appareils, ustensiles et nom des recettes dans un input.
-    J'ai donc utilisé comme demandé le banc de test JSBEN.CH en ligne, mais après plusieurs tests, JSBEN.CH ne parvient pas à faire la différence entre mes deux codes, il me dit que le plus performant est un coup les fonction native et un coup la fonction avec les boucles.
-    J'ai donc utilisé JSBench.me, qui m'a bien montré que les fonction native on des algorithme bien plus performent qu'un simple filtre fait sans un algo bien réfléchi.
-</details>
-
-## Algorithme de filtre() ECMA 5
-
-```bash
-
-if (!Array.prototype.filter){
-  Array.prototype.filter = function(func, thisArg) {
-    'use strict';
-    if ( ! ((typeof func === 'Function' || typeof func === 'function') && this) )
-        throw new TypeError();
-
-    var len = this.length >>> 0,
-        res = new Array(len), // preallocate array
-        t = this, c = 0, i = -1;
-    if (thisArg === undefined){
-      while (++i !== len){
-        // checks to see if the key was set
-        if (i in this){
-          if (func(t[i], i, t)){
-            res[c++] = t[i];
-          }
-        }
-      }
-    }
-    else{
-      while (++i !== len){
-        // checks to see if the key was set
-        if (i in this){
-          if (func.call(thisArg, t[i], i, t)){
-            res[c++] = t[i];
-          }
-        }
-      }
-    }
-
-    res.length = c; // shrink down array to proper size
-    return res;
-  };
-}
+# Go to see the "Cas d’utilisation "
+https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P6+Algorithms/Cas+d%E2%80%99utilisation+%2303+Filtrer+les+recettes+dans+l%E2%80%99interface+utilisateur.pdf
 
 
 ```
+

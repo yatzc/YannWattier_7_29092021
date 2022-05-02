@@ -11,8 +11,7 @@ export function mainFilterLoop(recipes){
 
         let suggestion = '';
 
-        if(inputValue != "") {
-            // let suggestion = '';
+        if(inputValue != "" && inputValue.length >= 3) {
             for(let item of recipes){
                 if(
                     item.ingredients.find((ingredientArray) => ingredientArray.ingredient.toLowerCase().includes(inputValue.toLowerCase()) ) ||
@@ -21,14 +20,25 @@ export function mainFilterLoop(recipes){
                     item.name.toLowerCase().includes(inputValue.toLowerCase())
                 ){
                     filterArray.push(item);
-                    // let suggestion = '';
                     filterArray.forEach(resultItem => suggestion +=`${dishesdisplay(resultItem)}`);
                     document.getElementById("articles").innerHTML = suggestion;
                 }
             }
         } else {
+            recettes.style.display = "grid";
             suggestion = `${recipes.map(dishesdisplay).join("")}`;
+        }
+        if(result.length == 0){
+            // affiche message erreur
+            recettes.style.display = "block";
+            suggestion = 
+            `
+            <p class="errorMessage">
+                Aucune recette ne correspond à votre critère… vous pouvez chercher « tarte aux pommes », « poisson », etc...
+            </p>
+            `;
         }
         
     });
 }
+
