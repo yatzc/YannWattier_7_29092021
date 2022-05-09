@@ -2,6 +2,7 @@ import * as Btn from './btn.js';
 import { order_unique_ingredients, order_unique_appliance, order_unique_ustensils } from "./data.js";
 import { recipes } from "./recipes.js";
 import { mainFilterNative } from "./mainSearchNative.js";
+import { mainFilterLoop } from "./mainSearchLoop.js";
 import { btnFilterB, btnFilterG, btnFilterR, tagsdisplay } from "./tagSearch.js";
 
 // #region ============ affichage contenu des trois boutons
@@ -21,8 +22,8 @@ usten.innerHTML = `${order_unique_ustensils.map(ustensilsTemplate).join("")}`;
 function ustensilsTemplate(item) { return `<li data-css-color="red">${item}</li>`; }
 // #endregion ============ affichage contenu des trois boutons
 
-mainFilterNative(recipes);
-// mainFilterLoop(recipes);
+// mainFilterNative(recipes);
+mainFilterLoop(recipes);
 
 btnFilterB(recipes);
 btnFilterG(recipes);

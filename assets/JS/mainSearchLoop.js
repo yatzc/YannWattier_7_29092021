@@ -1,6 +1,7 @@
 import { dishesdisplay } from "./dishe.js";
 
 const searchinput = document.getElementById("main_search");
+const recettes = document.getElementById("articles");
 
 export function mainFilterLoop(recipes){
     searchinput.addEventListener('keyup', function(){
@@ -20,7 +21,8 @@ export function mainFilterLoop(recipes){
                     item.name.toLowerCase().includes(inputValue.toLowerCase())
                 ){
                     filterArray.push(item);
-                    filterArray.forEach(resultItem => suggestion +=`${dishesdisplay(resultItem)}`);
+                    recettes.style.display = "grid";
+                    filterArray.forEach(resultItem => { suggestion +=`${dishesdisplay(resultItem)}`; } );
                     document.getElementById("articles").innerHTML = suggestion;
                 }
             }
@@ -28,7 +30,7 @@ export function mainFilterLoop(recipes){
             recettes.style.display = "grid";
             suggestion = `${recipes.map(dishesdisplay).join("")}`;
         }
-        if(result.length == 0){
+        if(filterArray.length == 0){
             // affiche message erreur
             recettes.style.display = "block";
             suggestion = 
@@ -38,7 +40,8 @@ export function mainFilterLoop(recipes){
             </p>
             `;
         }
+
+        myIncludes(suggestion, 'coco');
         
     });
 }
-

@@ -4,22 +4,30 @@ const searchinput = document.getElementById("main_search");
 const recettes = document.getElementById("articles");
 
 export function mainFilterNative(recipes) {
+    let rechercheCourrante;
+    let result;
+
     searchinput.addEventListener('keyup', function(){
         // recupère la valeur du input
         const inputValue = searchinput.value;
+
+        if(rechercheCourrante === undefined ) { rechercheCourrante = recipes; }
+        else if(rechercheCourrante !== undefined ) { rechercheCourrante = result; }
+
         // compare le input aux éléments
-        let result = recipes.filter(item => 
+        result = rechercheCourrante.filter(item => 
             item.ingredients.find((ingredientArray) => ingredientArray.ingredient.toLowerCase().includes(inputValue.toLowerCase()) ) ||
             item.appliance.toLowerCase().includes(inputValue.toLowerCase()) ||
             item.ustensils.find((ustensils ) => ustensils.toLowerCase().includes(inputValue.toLowerCase()) ) ||
             item.name.toLowerCase().includes(inputValue.toLowerCase())
         );
+
         // Met chaque resultat dans un div
         let suggestion = '';
         if(inputValue != "" && inputValue.length >= 3) {
             recettes.style.display = "grid";
             result.forEach(resultItem => suggestion +=`${dishesdisplay(resultItem)}`);
-        } else{
+        } else {
             recettes.style.display = "grid";
             suggestion = `${recipes.map(dishesdisplay).join("")}`;
         }
